@@ -10,6 +10,10 @@ $ npm init -y
 $ npm install express
 /*instala o microframework que nos ajuda com rotas (endereços, url) e views (front-end)*/
 
+# Instala o Nodemon;
+$ npm install -D Nodemon
+/*instala o Nodemon como dependência de desenvolvimento. Ele reinicializa o servidor automaticamente toda vez que  modificamos o arquivo server.js*/
+
 # Inicia o servidor;
-$ node server.js
+$ node run dev
 /*depois é só abrir o navegador e colocar o endereço do servidor: http://localhost:3001*/
