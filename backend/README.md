@@ -9,3 +9,7 @@ $ npm init -y
 # Instalar express;
 $ npm install express
 /*instala o microframework que nos ajuda com rotas (endereços, url) e views (front-end)*/
+
+# Inicia o servidor;
+$ node server.js
+/*depois é só abrir o navegador e colocar o endereço do servidor: http://localhost:3001*/
