@@ -1,10 +1,12 @@
 const express = require('express'); //adiciona o express
+const cors = require('cors'); //permite acesso de domínios externos
 const mongoose = require('mongoose');
 const requireDir = require('require-dir');
 
 // Inicia o App
 app = express(); 
 app.use(express.json()); //permite receber informações em JSON
+app.use(cors()); //cors() sem parâmetros permite acesso de todos os domínios, a API se torna pública
 
 var mongoDB = 'mongodb://localhost:27017/nodeapi';
 // Inicia o DB
