@@ -4,7 +4,26 @@ Node.js (back-end);
 $ node run dev
 /*depois é só abrir o navegador e colocar o endereço do servidor: http://localhost:3001*/
 
-   
+# Iniciar o mongodb dentro do Docker;
+$ docker start mongodb
+
+OBS: se não funcionar, as vezes é necessário dar o comando docker kill mongodb e em seguida docker start mongodb ou apenas docker restart
+
+# Inserindo registros em uma colletion/table usando Docker
+nesse caso só funciona se atualizar a página no navegador (http://localhost:3001), então é inserido um registro com sucesso, isso acontece quando o comando de inserção é executado apenas quando acessa a rota GET;
+
+    app.get('/', (req, res) => {
+
+        Product.create({
+            title: 'ReactJS',
+            description: 'Build web SPA with React',
+            url: 'rocketseat.com'
+        })
+
+        return res.send('Hello World!');
+    }); 
+
+------------------------------------------   
 # Algumas dependências do projeto:
 
     #  Express;
@@ -35,9 +54,8 @@ $ node run dev
     https://devconnected.com/how-to-install-docker-on-windows-7-8-10-home-and-pro/
     ou vir no link direto para baixar a última versão exe; https://github.com/docker/toolbox/releases
 
-    depois tem que iniciar o Docker Quickstart Terminal para conseguir executar comandos no Docker a aguardar instalar a máquina virtual do Docker até aparecer a tela;
+    depois tem que iniciar o Docker Quickstart Terminal para conseguir executar comandos no Docker (e na primeira vez deve aguardar instalar a máquina virtual);
     
-    Pode fechar o terminal do Docker e fazer todos os comandos em um outro terminal comum
     ------------
 
     2.	docker pull mongo   /*baixa a máquina virtual do mongodb */
