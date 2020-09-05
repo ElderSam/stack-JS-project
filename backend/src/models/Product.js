@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const mongoosePaginate = require('mongoose-paginate');
 
 const ProductSchema = new mongoose.Schema({
     //Proprierties/columns: title, description, url, createdAt
@@ -18,6 +19,8 @@ const ProductSchema = new mongoose.Schema({
         type: Date,
         default: Date.now
     }
-})
+});
+
+ProductSchema.plugin(mongoosePaginate);
 
 mongoose.model("Product", ProductSchema);

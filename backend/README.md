@@ -13,7 +13,7 @@ OBS: se não funcionar, as vezes é necessário dar o comando docker kill mongod
 # Routes;
 
     Products:
-        List all -> http://localhost:3001/api/products (GET)
+        List by page (max 10 registers/page) -> http://localhost:3001/api/products?page=1 (GET)
         List by id -> http://localhost:3001/api/products/:id (GET)
         Create -> http://localhost:3001/api/products (POST)
         Update -> http://localhost:3001/api/products/:id (PUT)
