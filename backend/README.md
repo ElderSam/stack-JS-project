@@ -8,20 +8,11 @@ $ node run dev
 $ docker start mongodb
 
 OBS: se não funcionar, as vezes é necessário dar o comando docker kill mongodb e em seguida docker start mongodb ou apenas docker restart
+------------------------------------------
 
-# Inserindo registros em uma colletion/table usando Docker
-nesse caso só funciona se atualizar a página no navegador (http://localhost:3001), então é inserido um registro com sucesso, isso acontece quando o comando de inserção é executado apenas quando acessa a rota GET;
+# Routes;
 
-    app.get('/', (req, res) => {
-
-        Product.create({
-            title: 'ReactJS',
-            description: 'Build web SPA with React',
-            url: 'rocketseat.com'
-        })
-
-        return res.send('Hello World!');
-    }); 
+    http://localhost:3001/api/products (GET)
 
 ------------------------------------------   
 # Algumas dependências do projeto:

@@ -25,16 +25,7 @@ requireDir('./src/models');
 
 const Product = mongoose.model('Product');
 
-// Primeira rota
-app.get('/', (req, res) => {
-    //quando acessar http://localhost:3001 ou dar um refresh na página, então será inserido um novo registro
-    Product.create({
-        title: 'Node.js',
-        description: 'Build your back-end in JavaScript',
-        url: 'rocketseat.com'
-    })
-
-    return res.send('Hello World!');
-});
+//recebe todo tipo de requisição
+app.use('/api', require('./src/routes'))
 
 app.listen(3001); /* inicia o servidor e 'ouve' a porta 3001 do nosso navegador */
