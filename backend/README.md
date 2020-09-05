@@ -5,7 +5,18 @@ $ node run dev
 /*depois é só abrir o navegador e colocar o endereço do servidor: http://localhost:3001*/
 
    
+# Algumas dependências do projeto:
 
+    #  Express;
+    Microframework que nos ajuda com rotas (endereços, url) e views (front-end)
+
+    # Nodemon;
+    Reinicializa o servidor automaticamente toda vez que  modificamos o arquivo server.js
+
+    # Mongoose
+    é um ORM de banco não relacionais em MongoDB
+    ORM (Object Relational Mapining): encapsula as operações do BD através do código, ou seja, em vez de usar a linguagem da base de dados, ele nos permite utilizar o código JavaScript para fazer o CRUD.
+ 
 
 # Instalando MongoDB -------------------------------------------------------------------------------
 # Instalar MongoDB utilizando Docker;
