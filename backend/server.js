@@ -4,8 +4,7 @@ const requireDir = require('require-dir');
 
 // Inicia o App
 app = express(); 
-
-let resConnectionDB;
+app.use(express.json()); //permite receber informações em JSON
 
 var mongoDB = 'mongodb://localhost:27017/nodeapi';
 // Inicia o DB
