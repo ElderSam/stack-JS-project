@@ -1,6 +1,8 @@
 # App de Produtos
 desenvolvido em ReactJS
 
+Note: To access http://localhost:3001/api, you must start the server in ../backend/ directory in this project (https://github.com/ElderSam/stack-JS-project/tree/master/backend) and give the comand npm start 
+
 
 -------------------------------------
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
